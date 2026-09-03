@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AgroSelect | Landing page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href="brand.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="wrap">
+                <div class="brand"><span class="logo"><img src="img/agroselect-logo-mark.svg" alt="logo"></span>AgroSelect</div>
+                <div class="nav-links">
+                <a href="#how">How it works</a>
+                <a href="#compare">Compare crops</a>
+                <a href="#about">About</a>
+                </div>
+                <a class="btn btn-primary" href="agroselector-crop-details.html">Start planning</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="wrap">
+                <div class="hero-content">
+                <h1>Know what your harvest is worth before you plant it.</h1>
+                <p class="lede">AgroSelect compares crops and inputs against your plot, your budget, and your market; making planting decision a calculation, not a guess.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-primary" href="agroselector-crop-details.html">Start planning</a>
+                    <a class="btn btn-ghost" href="#compare">See a comparison</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>3 inputs</strong><span>cost, yield, and market value; all side by side</span></div>
+                    <div><strong>1 plot</strong><span>estimates built around your own land</span></div>
+                    <div><strong>0 guessing</strong><span>numbers before you spend a season on it</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="furrows" aria-hidden="true">
+                <!--<svg viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice">
+                <polygon points="-200,400 0,400 562.5,0 550,0" fill="#1B5E20"/>
+                <polygon points="0,400 200,400 575,0 562.5,0" fill="#4CAF50"/>
+                <polygon points="200,400 400,400 587.5,0 575,0" fill="#AEEA00"/>
+                <polygon points="400,400 600,400 600,0 587.5,0" fill="#FFEB3B"/>
+                <polygon points="600,400 800,400 612.5,0 600,0" fill="#1B5E20"/>
+                <polygon points="800,400 1000,400 625,0 612.5,0" fill="#4CAF50"/>
+                <polygon points="1000,400 1200,400 637.5,0 625,0" fill="#AEEA00"/>
+                <polygon points="1200,400 1400,400 650,0 637.5,0" fill="#FFEB3B"/>
+                </svg>-->
+            </div>
+        </section>
+
+        <section class="problem" id="about">
+            <div class="wrap problem-grid">
+                <div>
+                    <div class="section-head">
+                        <h2>Right now, the guess costs a season.</h2>
+                        <p>Crop choice depends on soil, rainfall, input costs, and where the harvest will actually sell. These are more variables than one household can track from memory. Extension officers exist to help with this, but in most regions a single agent supports thousands of farmers, far past what a personal visit can cover. Most farmers plant on habit and hope, not on numbers.</p>
+                    </div>
+                </div>
+                    <div class="ledger">
+                    <div class="ledger-row"><span class="k">Farmers with access to any digital farming tool today</span><span class="v">~13%</span></div>
+                    <div class="ledger-row"><span class="k">Farmers a single extension agent may be responsible for</span><span class="v">10,000+</span></div>
+                    <div class="ledger-row"><span class="k">Recommended farmers per extension agent</span><span class="v">1,000</span></div>
+                    <div class="ledger-row"><span class="k">Chances to fix a wrong crop choice mid-season</span><span class="v">None</span></div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="how">
+        <div class="wrap">
+            <div class="section-head">
+            <h2>Three inputs, one clear answer.</h2>
+            <p>Quick and easy insight; we do the research for you.</p>
+            </div>
+            <div class="steps">
+            <div class="step">
+                <span class="num">01</span>
+                <h3>Tell us your plot</h3>
+                <p>Location and size. This narrows down which crops actually suit your land and climate.</p>
+            </div>
+            <div class="step">
+                <span class="num">02</span>
+                <h3>Set your budget</h3>
+                <p>What you can put toward seed, fertilizer, and labor this season.</p>
+            </div>
+            <div class="step">
+                <span class="num">03</span>
+                <h3>Compare your options</h3>
+                <p>See cost, expected yield, and market value for each viable crop, ranked by return value.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="compare" id="compare">
+        <div class="wrap">
+            <div class="section-head">
+            <h2>What the comparison actually looks like</h2>
+            <p>Sample output for a half-hectare plot. Every number is an estimate, shown as a range where it matters; derived and aggregated from verifiable sources.</p>
+            </div>
+            <div class="table-card">
+            <table>
+                <thead>
+                <tr>
+                    <th>Crop</th>
+                    <th>Input cost</th>
+                    <th>Expected yield</th>
+                    <th>Est. market value</th>
+                    <th>Net return</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="crop">Maize</td>
+                    <td>₦58,000</td>
+                    <td>7–9 bags</td>
+                    <td>₦126,000</td>
+                    <td>₦68,000</td>
+                </tr>
+                <tr class="best">
+                    <td class="crop">Cassava<span class="tag-best">Best return</span></td>
+                    <td>₦41,000</td>
+                    <td>4.5–5.5 tons</td>
+                    <td>₦142,000</td>
+                    <td>₦101,000</td>
+                </tr>
+                <tr>
+                    <td class="crop">Cowpea</td>
+                    <td>₦35,000</td>
+                    <td>5–7 bags</td>
+                    <td>₦91,000</td>
+                    <td>₦56,000</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <p class="table-note">Figures shown are for illustrative purposes.</p>
+        </div>
+        </section>
+
+        <section class="cta-band" id="join">
+        <div class="wrap">
+            <h2>Plant with the numbers already worked out.</h2>
+            <div class="cta-form">
+            <input type="email" placeholder="you@example.com" aria-label="Email address">
+            <button class="btn btn-primary" type="button">Start planning</button>
+            </div>
+        </div>
+        </section>
+
+        <footer>
+        <div class="wrap">
+            <div class="brand"><span class="logo"><img src="img/agroselect-logo-mark.svg" alt="logo"></span>AgroSelect</div>
+            <div class="foot-links">
+            <a href="#how">How it works</a>
+            <a href="#compare">Compare crops</a>
+            <a href="#about">About</a>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>

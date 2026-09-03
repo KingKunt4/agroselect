@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroSelect — Brand Identity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark:#1B5E20; --mid:#4CAF50; --lime:#AEEA00; --yellow:#FFEB3B; --paper:#FAFAFA;
+    --ink:#142318; --muted:#5b6b5f; --line:#e2e5df; --max:1040px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif; line-height:1.55;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif; color:var(--dark); margin:0; letter-spacing:-0.01em;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  code, .mono{font-family:'Roboto Mono', monospace;}
+
+  header.title{padding:64px 0 40px; border-bottom:1px solid var(--line);}
+  header.title .brand-row{display:flex; align-items:center; gap:16px; margin-bottom:22px;}
+  .mark{width:48px; height:48px; border-radius:11px;
+    background:linear-gradient(135deg, var(--dark) 0 25%, var(--mid) 25% 50%, var(--lime) 50% 75%, var(--yellow) 75% 100%);
+  }
+  header.title h1{font-size:clamp(1.8rem,3.6vw,2.6rem);}
+  header.title p{color:var(--muted); font-size:1.05rem; max-width:560px; margin-top:14px;}
+
+  section{padding:60px 0; border-bottom:1px solid var(--line);}
+  section:last-child{border-bottom:none;}
+  .section-label{font-size:0.85rem; color:var(--mid); font-weight:600; margin-bottom:8px;}
+  h2{font-size:1.5rem; margin-bottom:8px;}
+  .section-intro{color:var(--muted); max-width:560px; margin-bottom:36px;}
+
+  /* LOGO */
+  .logo-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  .logo-card{border:1px solid var(--line); border-radius:10px; padding:36px; display:flex; align-items:center; justify-content:center;}
+  .logo-card.on-dark{background:var(--dark);}
+  .logo-card.on-paper{background:#fff;}
+  .logo-card svg{height:40px; width:auto;}
+  .logo-caption{display:flex; justify-content:space-between; font-size:0.85rem; color:var(--muted); margin-top:10px;}
+
+  .clearspace-demo{
+    border:1px dashed var(--mid); border-radius:10px; padding:44px;
+    display:flex; align-items:center; justify-content:center; background:#fff;
+    margin-top:24px;
+  }
+  .clearspace-demo .mark{width:56px; height:56px;}
+
+  .min-size-row{display:flex; align-items:flex-end; gap:32px; margin-top:24px;}
+  .min-size-row .mark{border-radius:6px;}
+  .min-size-row .box{text-align:center; font-size:0.82rem; color:var(--muted);}
+
+  /* COLOR */
+  .swatches{display:grid; grid-template-columns:repeat(5,1fr); gap:0; border-radius:10px; overflow:hidden; border:1px solid var(--line);}
+  .swatch{padding:120px 18px 18px; color:#fff; position:relative;}
+  .swatch .hex{font-family:'Roboto Mono',monospace; font-weight:500; font-size:0.95rem; display:block;}
+  .swatch .role{font-size:0.82rem; opacity:0.9; margin-top:4px; display:block;}
+  .swatch.dark{background:var(--dark);}
+  .swatch.mid{background:var(--mid);}
+  .swatch.lime{background:var(--lime); color:var(--ink);}
+  .swatch.yellow{background:var(--yellow); color:var(--ink);}
+  .swatch.paper{background:var(--paper); color:var(--ink); border-left:1px solid var(--line);}
+
+  /* TYPE */
+  .type-specimen{margin-bottom:36px;}
+  .type-specimen .label{font-size:0.82rem; color:var(--muted); margin-bottom:10px;}
+  .type-specimen .sample-h{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:2.4rem; color:var(--ink);}
+  .type-specimen .sample-b{font-family:'Inter',sans-serif; font-size:1.05rem; color:var(--ink); max-width:520px;}
+  .scale-row{display:flex; align-items:baseline; gap:18px; padding:14px 0; border-bottom:1px solid var(--line);}
+  .scale-row:last-child{border-bottom:none;}
+  .scale-row .tag{width:110px; font-size:0.82rem; color:var(--muted); font-family:'Roboto Mono',monospace;}
+  .scale-row .sample{font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--ink);}
+
+  /* USAGE */
+  .usage-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .usage-card{border-radius:10px; padding:28px; border:1px solid var(--line);}
+  .usage-card h3{font-size:1rem; margin-bottom:14px;}
+  .usage-card.do{border-color:var(--mid);}
+  .usage-card.dont{border-color:#d98a4a;}
+  .usage-card ul{margin:0; padding-left:18px; color:var(--muted); font-size:0.95rem;}
+  .usage-card li{margin-bottom:8px;}
+
+  @media (max-width: 720px){
+    .logo-grid, .usage-grid{grid-template-columns:1fr;}
+    .swatches{grid-template-columns:repeat(3,1fr);}
+    .swatch:nth-child(4), .swatch:nth-child(5){grid-column:span 1;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <div class="wrap">
+    <div class="brand-row">
+      <div class="mark"></div>
+      <h1>AgroSelect — Brand Identity</h1>
+    </div>
+    <p>The visual system behind AgroSelect, a decision-support tool that helps smallholder farmers compare crops and inputs by cost, expected yield, and market value. Everything here matches what's used in the live landing page.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Logo</div>
+    <h2>Mark and lockups</h2>
+    <p class="section-intro">The mark is four diagonal bands running through the full palette in order — a compressed reading of plowed field rows, the same motif used as the landing page's hero graphic. It never needs to be redrawn in a single color; the four-color version is the primary and only form.</p>
+
+    <div class="logo-grid">
+      <div class="logo-card on-paper">
+        <svg viewBox="0 0 300 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="c1"><rect width="64" height="64" rx="14"/></clipPath>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1B5E20"/><stop offset="25%" stop-color="#1B5E20"/>
+              <stop offset="25%" stop-color="#4CAF50"/><stop offset="50%" stop-color="#4CAF50"/>
+              <stop offset="50%" stop-color="#AEEA00"/><stop offset="75%" stop-color="#AEEA00"/>
+              <stop offset="75%" stop-color="#FFEB3B"/><stop offset="100%" stop-color="#FFEB3B"/>
+            </linearGradient>
+          </defs>
+          <g clip-path="url(#c1)"><rect width="64" height="64" fill="url(#g1)"/></g>
+          <text x="80" y="41" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="34" fill="#1B5E20">AgroSelect</text>
+        </svg>
+      </div>
+      <div class="logo-card on-dark">
+        <svg viewBox="0 0 300 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="c2"><rect width="64" height="64" rx="14"/></clipPath>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1B5E20"/><stop offset="25%" stop-color="#1B5E20"/>
+              <stop offset="25%" stop-color="#4CAF50"/><stop offset="50%" stop-color="#4CAF50"/>
+              <stop offset="50%" stop-color="#AEEA00"/><stop offset="75%" stop-color="#AEEA00"/>
+              <stop offset="75%" stop-color="#FFEB3B"/><stop offset="100%" stop-color="#FFEB3B"/>
+            </linearGradient>
+          </defs>
+          <g clip-path="url(#c2)"><rect width="64" height="64" fill="url(#g2)"/></g>
+          <text x="80" y="41" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="34" fill="#FAFAFA">AgroSelect</text>
+        </svg>
+      </div>
+    </div>
+    <div class="logo-caption">
+      <span>Lockup — light background</span>
+      <span>Lockup — dark background (on Deep Green)</span>
+    </div>
+
+    <div class="clearspace-demo">
+      <div class="mark"></div>
+    </div>
+    <div class="logo-caption"><span>Clear space: keep space equal to the mark's own height free on all sides.</span><span></span></div>
+
+    <div class="min-size-row">
+      <div class="box"><div class="mark" style="width:64px;height:64px;"></div>Icon alone — 24px minimum</div>
+      <div class="box"><div class="mark" style="width:20px;height:20px;border-radius:4px;"></div>20px favicon size</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Color</div>
+    <h2>Palette</h2>
+    <p class="section-intro">Deep Green carries headlines, navigation, and primary text. Mid Green is the workhorse for buttons and links. Lime is reserved for one job only: flagging the best option in a comparison. Yellow is a small accent, used sparingly. Paper is the base background, never pure white.</p>
+    <div class="swatches">
+      <div class="swatch dark"><span class="hex">#1B5E20</span><span class="role">Deep Green — headings, nav, primary text</span></div>
+      <div class="swatch mid"><span class="hex">#4CAF50</span><span class="role">Mid Green — buttons, links, active states</span></div>
+      <div class="swatch lime"><span class="hex">#AEEA00</span><span class="role">Lime — "best value" highlight only</span></div>
+      <div class="swatch yellow"><span class="hex">#FFEB3B</span><span class="role">Yellow — small accents, sparing use</span></div>
+      <div class="swatch paper"><span class="hex">#FAFAFA</span><span class="role">Paper — base background</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Typography</div>
+    <h2>Type system</h2>
+    <p class="section-intro">Two families, two jobs. Space Grotesk carries headlines and data — anything that should read like a figure or a decision. Inter carries everything a person reads at length.</p>
+
+    <div class="type-specimen">
+      <div class="label">Space Grotesk — headings &amp; data</div>
+      <div class="sample-h">Know what it's worth.</div>
+    </div>
+    <div class="type-specimen">
+      <div class="label">Inter — body text</div>
+      <div class="sample-b">AgroSelect compares crops and inputs against your plot, your budget, and your market — so a planting decision is a calculation, not a guess.</div>
+    </div>
+
+    <div class="scale-row"><span class="tag">H1 / 56px</span><span class="sample" style="font-size:56px;">Aa</span></div>
+    <div class="scale-row"><span class="tag">H2 / 35px</span><span class="sample" style="font-size:35px;">Aa</span></div>
+    <div class="scale-row"><span class="tag">H3 / 20px</span><span class="sample" style="font-size:20px;">Aa</span></div>
+    <div class="scale-row"><span class="tag">Body / 16px</span><span class="sample" style="font-family:'Inter',sans-serif; font-weight:400; font-size:16px;">Aa</span></div>
+    <div class="scale-row"><span class="tag">Caption / 14px</span><span class="sample" style="font-family:'Inter',sans-serif; font-weight:500; font-size:14px; color:var(--muted);">Aa</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Usage</div>
+    <h2>Keeping it consistent</h2>
+    <div class="usage-grid">
+      <div class="usage-card do">
+        <h3>Do</h3>
+        <ul>
+          <li>Use the full four-color mark at every size down to 24px</li>
+          <li>Keep Lime reserved for flagging the best option in a comparison</li>
+          <li>Set headlines in Space Grotesk, body copy in Inter</li>
+          <li>Use the dark-background lockup only on Deep Green, never on photos</li>
+        </ul>
+      </div>
+      <div class="usage-card dont">
+        <h3>Don't</h3>
+        <ul>
+          <li>Recolor the mark to a single flat color</li>
+          <li>Use Lime or Yellow as a body text color</li>
+          <li>Stretch or skew the mark's proportions</li>
+          <li>Pair Space Grotesk headlines with a third font family</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
