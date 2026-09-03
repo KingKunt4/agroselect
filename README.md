@@ -6,9 +6,9 @@ Pod project addressing the problem of **smallholder crop and input choice**. Far
 
 ## Problem
 
-- Crop choice depends on soil, climate, input cost, and market price at harvest — more variables than most households can track from memory or informal advice.
+- Crop choice depends on soil, climate, input cost, and market price at harvest which is more variables than most households can track from memory or informal advice.
 - Agricultural extension services can't scale to meet the need: a single officer may support thousands of farmers, far past what personal visits can cover.
-- Existing digital tools tend to specialize in *either* agronomic advice (what/how to grow) *or* market and financial access — not the combined "what will this cost me, and what will it be worth" comparison a farmer needs before committing to a season.
+- Existing digital tools tend to specialize in *either* agronomic advice (what/how to grow) *or* market and financial access; not the combined "what will this cost me, and what will it be worth" comparison a farmer needs before committing to a season.
 
 Full background and supporting research: see `res/Selector_Pod_Master_Research_Document.docx`.
 
