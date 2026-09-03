@@ -1,0 +1,44 @@
+h2 {
+      color: #1B5E20;
+    }
+    .form-field{
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        padding: 10px;
+        align-items: center;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #4CAF50;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #FAFAFA;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    button:hover {
+      background-color: #AEEA00;
+      color: #1B5E20;
+    }
+
+    /* Footer Shell */
+    footer {
+      background-color: #1B5E20;
+      color: #FAFAFA;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 3px solid #AEEA00;
+    }
+    footer a {
+      color: #FFEB3B;
+    }

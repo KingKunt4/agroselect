@@ -2,9 +2,11 @@ nav .wrap{
     display:flex; align-items:center; justify-content:space-between;
     height:72px;
 }
-.nav-links{display:flex; align-items:center; gap:34px; font-size:0.95rem; font-weight:500; color:var(--ink);}
-.nav-links a{text-decoration:none; opacity:0.8; transition:opacity .15s;}
-.nav-links a:hover{opacity:1;}
+.wrap{
+    max-width:var(--max); 
+    margin:0 auto; 
+    padding:0 28px;
+}
 .btn{
 display:inline-block;
 font-family:'Inter', sans-serif;
